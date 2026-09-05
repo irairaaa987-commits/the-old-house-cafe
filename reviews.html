@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reviews | The Old House</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="imagesforblog/logo.jpeg" alt="The Old House Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="oldhouse.html">The Oldhouse</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="reviews.html" class="active">Reviews</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= REVIEW HEADER ================= -->
+
+<section class="reviews-header">
+
+    <p class="small-title">WHAT OUR GUESTS SAY</p>
+
+    <h1>Reviews</h1>
+
+    <p>
+        Good food, peaceful surroundings and
+        memories worth sharing.
+    </p>
+
+</section>
+
+
+<!-- ================= RATING ================= -->
+
+<section class="rating-section">
+
+    <div class="rating-box">
+
+        <div class="rating-number">4.3</div>
+
+        <div class="stars">★★★★★</div>
+
+        <p>Based on 10.8K reviews</p>
+
+        <p class="rating-note">
+            Guests love the food, ambience and
+            peaceful old-house atmosphere.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUSTOMER REVIEWS ================= -->
+
+<section class="reviews-section">
+
+    <div class="section-title">
+
+        <p class="small-title">KIND WORDS</p>
+
+        <h2>What people are saying</h2>
+
+    </div>
+
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p>
+                “A beautiful place to relax with
+                friends. The ambience is peaceful
+                and the food was delicious.”
+            </p>
+
+            <h3>— Happy Guest</h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p>
+                “Loved the old-house feel and all
+                the greenery around the café.
+                Perfect place for a quiet evening.”
+            </p>
+
+            <h3>— Café Visitor</h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★☆</div>
+
+            <p>
+                “The food was fresh and tasty.
+                The atmosphere makes you want
+                to stay longer.”
+            </p>
+
+            <h3>— Happy Customer</h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p>
+                “Such a cozy café in Mysuru.
+                The natural surroundings make
+                the experience special.”
+            </p>
+
+            <h3>— Café Lover</h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p>
+                “A lovely place for breakfast
+                and coffee. Calm, comfortable
+                and welcoming.”
+            </p>
+
+            <h3>— Guest</h3>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p>
+                “The Old House really feels like
+                a little escape from the busy city.
+                Would definitely visit again.”
+            </p>
+
+            <h3>— Regular Visitor</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WRITE REVIEW ================= -->
+
+<section class="write-review">
+
+    <p class="small-title">SHARE YOUR EXPERIENCE</p>
+
+    <h2>Had a lovely time?</h2>
+
+    <p>
+        Tell us about your experience at
+        The Old House.
+    </p>
+
+    <form id="reviewForm">
+
+        <input
+            type="text"
+            id="reviewName"
+            placeholder="Your Name"
+            required
+        >
+
+        <select id="reviewRating" required>
+
+            <option value="">Choose Rating</option>
+            <option>★★★★★ — Excellent</option>
+            <option>★★★★☆ — Very Good</option>
+            <option>★★★☆☆ — Good</option>
+            <option>★★☆☆☆ — Average</option>
+            <option>★☆☆☆☆ — Poor</option>
+
+        </select>
+
+        <textarea
+            id="reviewText"
+            rows="5"
+            placeholder="Write your review..."
+            required>
+        </textarea>
+
+        <button type="submit" class="btn">
+            Submit Review
+        </button>
+
+    </form>
+
+    <p id="reviewMessage"></p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <img src="imagesforblog/logo.jpeg"
+         alt="The Old House Logo">
+
+    <h3>The Old House</h3>
+
+    <p>
+        Where nature meets the warmth of home.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="oldhouse.html">The Oldhouse</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="reviews.html">Reviews</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 The Old House Café
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+document.getElementById("reviewForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("reviewMessage").textContent =
+        "🌿 Thank you for sharing your experience!";
+
+    this.reset();
+
+});
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

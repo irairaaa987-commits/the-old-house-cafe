@@ -1,0 +1,1909 @@
+/* =========================
+   THE OLD HOUSE CAFÉ
+   FOREST & CREAM THEME
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #F4F0E6;
+    color: #24352A;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: #24352A;
+    min-height: 85px;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo img {
+    width: 70px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.navbar nav a {
+    color: #E8EBDD;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #A8B89A;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 92%;
+    max-width: 1200px;
+    height: 430px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(36, 53, 42, 0.55);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 25px;
+    color: #E8EBDD;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #A8B89A;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 0.95;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #A8B89A;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #F4F0E6;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #657153;
+    color: #F4F0E6;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8B6F52;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    background: #E8EBDD;
+    color: #24352A;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(40px, 6vw, 62px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.welcome h2 span {
+    color: #657153;
+}
+
+.welcome-text {
+    max-width: 650px;
+    margin: 12px auto;
+    color: #56624F;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #657153;
+    font-weight: 600;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights {
+    background: #A8B89A;
+    padding: 55px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.highlight-card {
+    background: #F4F0E6;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.highlight-card span {
+    font-size: 32px;
+}
+
+.highlight-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.highlight-card p {
+    color: #56624F;
+}
+
+
+/* =========================
+   CAFE DETAILS
+========================= */
+
+.cafe-details {
+    padding: 80px 20px;
+    text-align: center;
+    background: #24352A;
+    color: #E8EBDD;
+}
+
+.details-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cafe-details h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    color: #A8B89A;
+    margin-bottom: 15px;
+}
+
+.cafe-details p {
+    margin: 12px 0;
+}
+
+.rating {
+    color: #C9B284;
+}
+
+.address {
+    max-width: 600px;
+    margin: auto !important;
+}
+
+
+/* =========================
+   FINAL AMBIENCE
+========================= */
+
+.final-ambience {
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.final-ambience img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.final-text h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.final-text p:not(.small-title) {
+    color: #56624F;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #24352A;
+    color: #E8EBDD;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer img {
+    width: 65px;
+    height: 55px;
+    object-fit: contain;
+    margin: auto;
+}
+
+footer h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: #A8B89A;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #A8B89A;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        width: 94%;
+        height: 350px;
+        margin: 15px auto;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .final-ambience {
+        grid-template-columns: 1fr;
+        padding: 55px 6%;
+    }
+
+    .final-ambience img {
+        height: 280px;
+    }
+
+    .final-text h2 {
+        font-size: 44px;
+    }
+}
+/* =========================================
+   MENU CATEGORY SECTION
+========================================= */
+
+.food-category {
+    display: none;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.food-category.active-category {
+    display: block;
+}
+
+.food-category > h2 {
+    text-align: center;
+    color: #6f8565;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CATEGORY BUTTONS
+========================================= */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.category {
+    background: #eef2e8;
+    color: #607458;
+    border: 1px solid #b8c7ae;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.category:hover,
+.category.active {
+    background: #7f9475;
+    color: white;
+}
+
+
+/* =========================================
+   MENU ITEMS
+========================================= */
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #fffdf8;
+    padding: 10px 15px;
+    border-radius: 14px;
+    border: 1px solid #dce3d6;
+    box-shadow: 0 2px 8px rgba(60, 80, 50, 0.08);
+}
+
+
+/* SMALL FOOD IMAGE */
+
+.menu-item img {
+    width: 75px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   ITEM NAME OVAL
+========================================= */
+
+.menu-details {
+    flex: 1;
+}
+
+.menu-details h3 {
+    display: inline-block;
+    background: #e6eee0;
+    color: #5f7655;
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-size: 19px;
+    margin: 0 0 5px 0;
+}
+
+
+/* PRICE */
+
+.menu-item strong {
+    color: #5f7655;
+    font-size: 17px;
+    min-width: 55px;
+    text-align: right;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .categories {
+        gap: 7px;
+    }
+
+    .category {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .food-category {
+        padding: 10px;
+    }
+
+    .food-category > h2 {
+        font-size: 27px;
+    }
+
+    .menu-item {
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .menu-item img {
+        width: 60px;
+        height: 50px;
+    }
+
+    .menu-details h3 {
+        font-size: 16px;
+        padding: 6px 11px;
+    }
+
+    .menu-item strong {
+        font-size: 14px;
+        min-width: 45px;
+    }
+}
+/* ===== MENU CATEGORY FIX ===== */
+
+.food-category {
+    display: none !important;
+}
+
+.food-category.active-category {
+    display: block !important;
+}
+
+/* Menu item layout */
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    gap: 18px;
+    background: #fffdf8;
+    border-radius: 15px;
+}
+
+/* Small images */
+
+.menu-item img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Item name */
+
+.menu-details {
+    flex: 1;
+}
+
+.menu-details h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 16px;
+    border-radius: 50px;
+    background: #e7eee2;
+    color: #637b5b;
+    font-size: 18px;
+}
+
+/* Price */
+
+.menu-item strong {
+    margin-left: auto;
+    color: #637b5b;
+    font-size: 17px;
+    white-space: nowrap;
+}
+/* ===== GALLERY SMALL IMAGES ===== */
+
+.gallery-section {
+    padding: 40px 20px;
+}
+
+.gallery-grid {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-card {
+    background: #fffdf8;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.gallery-card img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.gallery-card h3 {
+    margin: 10px 5px 5px;
+    color: #637b5b;
+    font-size: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .gallery-card img {
+        height: 120px !important;
+    }
+
+    .gallery-card h3 {
+        font-size: 15px;
+    }
+}
+/* ===== OLDHOUSE IMAGES ===== */
+
+.oldhouse-images {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.oldhouse-images img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .oldhouse-images {
+        gap: 12px;
+    }
+
+    .oldhouse-images img {
+        height: 120px;
+    }
+}
+/* ===== RESERVATION PAGE ===== */
+
+.reservation-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.reservation-header h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+.reservation-header p {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.reservation-section {
+    padding: 40px 20px 80px;
+}
+
+.reservation-container {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+
+.reservation-info h2 {
+    font-size: 42px;
+    color: #637b5b;
+    margin: 10px 0 20px;
+}
+
+.reservation-info > p {
+    line-height: 1.8;
+}
+
+.reservation-details {
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+
+.reservation-form-box {
+    background: #fffdf8;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(70, 90, 60, 0.12);
+}
+
+.reservation-form-box h2 {
+    color: #637b5b;
+    margin-top: 0;
+}
+
+
+.reservation-form-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+
+.reservation-form-box input,
+.reservation-form-box select,
+.reservation-form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5c4;
+    border-radius: 10px;
+    background: white;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+
+.reservation-form-box textarea {
+    resize: vertical;
+}
+
+
+.reservation-form-box .btn {
+    margin-top: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#reservationMessage {
+    margin-top: 18px;
+    color: #637b5b;
+    font-weight: 600;
+}
+
+
+.reservation-bottom {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.reservation-bottom h2 {
+    font-size: 42px;
+    color: #637b5b;
+    line-height: 1.2;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+
+    .reservation-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .reservation-header h1 {
+        font-size: 40px;
+    }
+
+    .reservation-info h2,
+    .reservation-bottom h2 {
+        font-size: 34px;
+    }
+
+    .reservation-form-box {
+        padding: 22px;
+    }
+}
+/* ===== REVIEWS PAGE ===== */
+
+.reviews-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+}
+
+.reviews-header h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+.reviews-header p {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* Rating */
+
+.rating-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.rating-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: #fffdf8;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(70, 90, 60, 0.12);
+}
+
+.rating-number {
+    font-size: 55px;
+    font-weight: 600;
+    color: #637b5b;
+}
+
+.stars,
+.review-stars {
+    color: #637b5b;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.rating-note {
+    line-height: 1.6;
+}
+
+
+/* Review Cards */
+
+.reviews-section {
+    padding: 60px 20px;
+}
+
+.reviews-grid {
+    max-width: 900px;
+    margin: 35px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.review-card {
+    background: #fffdf8;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(70, 90, 60, 0.10);
+}
+
+.review-card p {
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.review-card h3 {
+    color: #637b5b;
+    font-size: 16px;
+}
+
+
+/* Write Review */
+
+.write-review {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.write-review h2 {
+    color: #637b5b;
+    font-size: 40px;
+}
+
+.write-review form {
+    max-width: 550px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.write-review input,
+.write-review select,
+.write-review textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #cbd5c4;
+    border-radius: 10px;
+    font-family: inherit;
+    background: #fff;
+}
+
+.write-review textarea {
+    resize: vertical;
+}
+
+.write-review button {
+    border: none;
+    cursor: pointer;
+}
+
+#reviewMessage {
+    color: #637b5b;
+    font-weight: 600;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .reviews-header h1 {
+        font-size: 40px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .write-review h2 {
+        font-size: 32px;
+    }
+
+}
+/* ==================================================
+   OLDHOUSE PAGE
+   Portrait Image + Information Layout
+================================================== */
+
+/* Oldhouse page background */
+body {
+    background: #f4f1e8;
+    color: #34483b;
+}
+
+/* Page heading */
+.menu-header {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: #e8eee4;
+}
+
+.menu-header h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    color: #526b58;
+    margin: 10px 0;
+}
+
+.menu-header p {
+    font-family: "DM Sans", sans-serif;
+    color: #718276;
+    font-size: 16px;
+    max-width: 650px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   PORTRAIT SECTIONS
+================================================== */
+
+.portrait-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Alternate direction */
+.portrait-section.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* ==================================================
+   PORTRAIT IMAGE
+================================================== */
+
+.portrait-image {
+    width: 42%;
+    flex-shrink: 0;
+}
+
+.portrait-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 160px 160px 25px 25px;
+
+    display: block;
+
+    box-shadow: 0 12px 30px rgba(50, 70, 55, 0.15);
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.portrait-info {
+    flex: 1;
+}
+
+.portrait-info .small-title {
+    color: #78917c;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.portrait-info h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    line-height: 1.05;
+    color: #405847;
+    margin: 0 0 25px;
+}
+
+.portrait-info h2 span {
+    color: #78917c;
+}
+
+.portrait-info p {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   QUICK FACTS
+================================================== */
+
+.why-us {
+    background: #e8eee4;
+    padding: 90px 30px;
+}
+
+.why-us .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-us .section-title h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    color: #405847;
+}
+
+.why-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: #f8f6ef;
+    padding: 30px 22px;
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(50, 70, 55, 0.08);
+}
+
+.why-card span {
+    font-size: 30px;
+}
+
+.why-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    color: #526b58;
+    margin: 15px 0 10px;
+}
+
+.why-card p {
+    font-family: "DM Sans", sans-serif;
+    color: #718076;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   ENDING SECTION
+================================================== */
+
+.oldhouse-ending {
+    text-align: center;
+    padding: 100px 20px;
+    background: #dce6da;
+}
+
+.oldhouse-ending .small-title {
+    color: #718a76;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.oldhouse-ending h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    line-height: 1.1;
+    color: #405847;
+    margin: 20px 0 35px;
+}
+
+.oldhouse-ending h2 span {
+    color: #78917c;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.oldhouse-ending .btn {
+    display: inline-block;
+    padding: 13px 28px;
+
+    background: #526b58;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.oldhouse-ending .btn:hover {
+    background: #405847;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: #34483b;
+    color: #e8eee4;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    margin: 5px 0 10px;
+}
+
+footer p {
+    font-family: "DM Sans", sans-serif;
+    color: #c9d5ca;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #dce6da;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+/* ==================================================
+   MOBILE PHONE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .menu-header {
+        padding: 60px 20px 45px;
+    }
+
+    .menu-header h1 {
+        font-size: 45px;
+    }
+
+    .portrait-section,
+    .portrait-section.reverse {
+        flex-direction: column;
+        gap: 35px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .portrait-image {
+        width: 80%;
+    }
+
+    .portrait-image img {
+        height: 420px;
+        border-radius: 120px 120px 20px 20px;
+    }
+
+    .portrait-info {
+        text-align: center;
+    }
+
+    .portrait-info h2 {
+        font-size: 38px;
+    }
+
+    .portrait-info p {
+        font-size: 15px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .oldhouse-ending h2 {
+        font-size: 42px;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL PHONE
+================================================== */
+
+@media (max-width: 480px) {
+
+    .portrait-image {
+        width: 88%;
+    }
+
+    .portrait-image img {
+        height: 360px;
+    }
+
+    .portrait-info h2 {
+        font-size: 34px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+    .oldhouse-ending {
+        padding: 70px 20px;
+    }
+
+    .oldhouse-ending h2 {
+        font-size: 36px;
+    }
+
+}
+/* ==================================================
+   OUR STORY PAGE
+================================================== */
+
+.story-header {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: #e5ece2;
+    padding: 70px 20px;
+}
+
+.story-header-content {
+    max-width: 800px;
+}
+
+.story-header h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 64px;
+    line-height: 1;
+    color: #405847;
+    margin: 15px 0 25px;
+}
+
+.story-header h1 span {
+    color: #78917c;
+}
+
+.story-header p:not(.small-title) {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* ==================================================
+   OPENING STORY
+================================================== */
+
+.story-opening {
+    max-width: 1100px;
+    margin: 90px auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.story-opening-image {
+    width: 43%;
+    flex-shrink: 0;
+}
+
+.story-opening-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+
+    border-radius: 170px 170px 25px 25px;
+
+    display: block;
+
+    box-shadow: 0 12px 30px rgba(50,70,55,0.15);
+}
+
+.story-opening-text {
+    flex: 1;
+}
+
+.story-opening-text h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 46px;
+    line-height: 1.05;
+    color: #405847;
+    margin: 15px 0 25px;
+}
+
+.story-opening-text h2 span {
+    color: #78917c;
+}
+
+.story-opening-text p {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   STORY SECTIONS
+================================================== */
+
+.story-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.story-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.story-image {
+    width: 42%;
+    flex-shrink: 0;
+}
+
+.story-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px 25px 160px 160px;
+
+    display: block;
+
+    box-shadow: 0 12px 30px rgba(50,70,55,0.14);
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text .small-title {
+    color: #78917c;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.story-text h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    line-height: 1.05;
+    color: #405847;
+    margin: 0 0 25px;
+}
+
+.story-text h2 span {
+    color: #78917c;
+}
+
+.story-text p {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   BRAND IDENTITY BOX
+================================================== */
+
+.identity-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.identity-box div {
+    background: #edf2e9;
+    border: 1px solid #d5dfd2;
+
+    padding: 15px 18px;
+
+    border-radius: 18px;
+
+    text-align: center;
+    min-width: 100px;
+}
+
+.identity-box strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    color: #526b58;
+    margin-bottom: 5px;
+}
+
+.identity-box span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    color: #718076;
+}
+
+
+/* ==================================================
+   PHILOSOPHY
+================================================== */
+
+.philosophy-section {
+    background: #e8eee4;
+
+    padding: 90px max(30px, calc((100% - 1100px) / 2));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+.philosophy-heading .small-title {
+    color: #78917c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.philosophy-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    line-height: 1.05;
+    color: #405847;
+    margin-top: 15px;
+}
+
+.philosophy-heading h2 span {
+    color: #78917c;
+}
+
+.philosophy-content p {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   WHAT WE BELIEVE
+================================================== */
+
+.beliefs {
+    padding: 100px 30px;
+    background: #f4f1e8;
+}
+
+.beliefs .section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.beliefs .section-title h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    line-height: 1;
+    color: #405847;
+    margin-top: 15px;
+}
+
+.beliefs .section-title h2 span {
+    color: #78917c;
+}
+
+.belief-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.belief-card {
+    background: #e8eee4;
+
+    padding: 40px 28px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.belief-card:hover {
+    transform: translateY(-6px);
+}
+
+.belief-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.belief-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    color: #526b58;
+    margin-bottom: 15px;
+}
+
+.belief-card p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #718076;
+}
+
+
+/* ==================================================
+   COMMUNITY SECTION
+================================================== */
+
+.community-section {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.community-image {
+    width: 45%;
+    flex-shrink: 0;
+}
+
+.community-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 150px 150px 25px 25px;
+
+    box-shadow: 0 12px 30px rgba(50,70,55,0.14);
+}
+
+.community-text {
+    flex: 1;
+}
+
+.community-text .small-title {
+    color: #78917c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.community-text h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 46px;
+    line-height: 1;
+    color: #405847;
+    margin: 15px 0 25px;
+}
+
+.community-text h2 span {
+    color: #78917c;
+}
+
+.community-text p {
+    font-family: "DM Sans", sans-serif;
+    color: #657267;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   STORY ENDING
+================================================== */
+
+.story-ending {
+    background: #dce6da;
+
+    text-align: center;
+
+    padding: 110px 25px;
+}
+
+.story-ending-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.story-ending .small-title {
+    color: #718a76;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.story-ending h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    line-height: 1.1;
+
+    color: #405847;
+
+    margin: 20px 0 35px;
+}
+
+.story-ending h2 span {
+    color: #78917c;
+}
+
+.story-button {
+    display: inline-block;
+
+    background: #526b58;
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.story-button:hover {
+    background: #405847;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .story-header {
+        min-height: 400px;
+    }
+
+    .story-header h1 {
+        font-size: 48px;
+    }
+
+    .story-opening,
+    .story-section,
+    .story-section.reverse,
+    .community-section {
+        flex-direction: column;
+        gap: 35px;
+        margin: 65px auto;
+        padding: 0 20px;
+    }
+
+    .story-opening-image,
+    .story-image,
+    .community-image {
+        width: 82%;
+    }
+
+    .story-opening-image img,
+    .story-image img,
+    .community-image img {
+        height: 430px;
+    }
+
+    .story-opening-text,
+    .story-text,
+    .community-text {
+        text-align: center;
+    }
+
+    .story-opening-text h2,
+    .story-text h2,
+    .community-text h2 {
+        font-size: 38px;
+    }
+
+    .identity-box {
+        justify-content: center;
+    }
+
+    .philosophy-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 70px 25px;
+        text-align: center;
+    }
+
+    .belief-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .beliefs {
+        padding: 75px 20px;
+    }
+
+    .beliefs .section-title h2 {
+        font-size: 40px;
+    }
+
+    .story-ending {
+        padding: 80px 20px;
+    }
+
+    .story-ending h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* ==================================================
+   SMALL PHONES
+================================================== */
+
+@media (max-width: 480px) {
+
+    .story-header h1 {
+        font-size: 42px;
+    }
+
+    .story-header p:not(.small-title) {
+        font-size: 15px;
+    }
+
+    .story-opening-image,
+    .story-image,
+    .community-image {
+        width: 90%;
+    }
+
+    .story-opening-image img,
+    .story-image img,
+    .community-image img {
+        height: 360px;
+    }
+
+    .story-opening-text h2,
+    .story-text h2,
+    .community-text h2 {
+        font-size: 34px;
+    }
+
+    .philosophy-heading h2 {
+        font-size: 39px;
+    }
+
+    .story-ending h2 {
+        font-size: 35px;
+    }
+}

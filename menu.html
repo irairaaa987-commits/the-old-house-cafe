@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | The Old House</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="imagesforblog/logo.jpeg" alt="The Old House Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="oldhouse.html">The Oldhouse</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="reviews.html">Reviews</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= MENU HEADER ================= -->
+
+<section class="menu-header">
+
+    <p class="small-title">THE OLD HOUSE KITCHEN</p>
+
+    <h1>Our Menu</h1>
+
+    <p>
+        Fresh vegetarian food, comforting flavours
+        and something delicious for every mood.
+    </p>
+
+</section>
+
+
+<!-- ================= CATEGORY BUTTONS ================= -->
+
+<section class="categories">
+
+    <button class="category active" onclick="showCategory('coffee', this)">
+        ☕ Coffee
+    </button>
+
+    <button class="category" onclick="showCategory('tea', this)">
+        🍵 Tea
+    </button>
+
+    <button class="category" onclick="showCategory('bakery', this)">
+        🥐 Bakery & Rolls
+    </button>
+
+    <button class="category" onclick="showCategory('salads', this)">
+        🥗 Salads
+    </button>
+
+    <button class="category" onclick="showCategory('appetizers', this)">
+        🍞 Appetizers
+    </button>
+
+    <button class="category" onclick="showCategory('pizza', this)">
+        🍕 Pizza
+    </button>
+
+    <button class="category" onclick="showCategory('eggs', this)">
+        🍳 Eggs & Breakfast
+    </button>
+
+    <button class="category" onclick="showCategory('desserts', this)">
+        🍰 Desserts
+    </button>
+
+    <button class="category" onclick="showCategory('gelato', this)">
+        🍨 Gelato & Sorbet
+    </button>
+
+    <button class="category" onclick="showCategory('cookies', this)">
+        🍪 Cookies
+    </button>
+
+</section>
+
+
+<!-- ==================================================
+     COFFEE
+================================================== -->
+
+<section class="food-category active-category" id="coffee">
+
+    <h2>☕ Coffee</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/espresso.jpeg" alt="Espresso">
+            <div class="menu-details"><h3>Espresso</h3></div>
+            <strong>₹110</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/americano.jpeg" alt="Americano">
+            <div class="menu-details"><h3>Americano</h3></div>
+            <strong>₹130</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/flatwhite.jpeg" alt="Flat White">
+            <div class="menu-details"><h3>Flat White</h3></div>
+            <strong>₹160</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/cappuccino.jpeg" alt="Cappuccino">
+            <div class="menu-details"><h3>Cappuccino</h3></div>
+            <strong>₹140</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/cafecortado.jpeg" alt="Café Cortado">
+            <div class="menu-details"><h3>Café Cortado</h3></div>
+            <strong>₹137</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/Hotchocolate.jpeg" alt="Hot Chocolate">
+            <div class="menu-details"><h3>Hot Chocolate</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     TEA
+================================================== -->
+
+<section class="food-category" id="tea">
+
+    <h2>🍵 Tea</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/minttea.jpeg" alt="Mint Tea">
+            <div class="menu-details"><h3>Mint Tea</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/hotgingertea.jpeg" alt="Hot Ginger Lemon">
+            <div class="menu-details"><h3>Hot Ginger Lemon</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/darjeelingblacktea.jpeg" alt="Darjeeling Black Tea">
+            <div class="menu-details"><h3>Darjeeling Black Tea</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/lemoniced tea.jpeg" alt="Lemon Iced Tea">
+            <div class="menu-details"><h3>Lemon Iced Tea</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     BAKERY
+================================================== -->
+
+<section class="food-category" id="bakery">
+
+    <h2>🥐 Bakery & Rolls</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/classicbuttercroissant.jpeg" alt="Classic Butter Croissant">
+            <div class="menu-details"><h3>Classic Butter Croissant</h3></div>
+            <strong>₹136</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/painauchocolat.jpeg" alt="Pain au Chocolat">
+            <div class="menu-details"><h3>Pain au Chocolat</h3></div>
+            <strong>₹168</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/almond croissant.jpeg" alt="Almond Croissant">
+            <div class="menu-details"><h3>Almond Croissant</h3></div>
+            <strong>₹178</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/sesamebagels.jpeg" alt="Sesame Bagels">
+            <div class="menu-details"><h3>Sesame Bagels</h3></div>
+            <strong>₹137</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SALADS
+================================================== -->
+
+<section class="food-category" id="salads">
+
+    <h2>🥗 Salads</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/redricesalad.jpeg" alt="Red Rice Salad">
+            <div class="menu-details"><h3>Red Rice Salad</h3></div>
+            <strong>₹240</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/mozzarella salad.jpeg" alt="Mozzarella Salad">
+            <div class="menu-details"><h3>Mozzarella Salad</h3></div>
+            <strong>₹240</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/leaffruitsalad.jpeg" alt="Leafy Fruit Salad">
+            <div class="menu-details"><h3>Leafy Fruit Salad</h3></div>
+            <strong>₹250</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/chickpeasalad.jpeg" alt="Chickpea Salad">
+            <div class="menu-details"><h3>Chickpea Salad</h3></div>
+            <strong>₹225</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/healthyoldhousesignature.jpeg" alt="Healthy Old House Signature">
+            <div class="menu-details"><h3>Healthy Old House Signature</h3></div>
+            <strong>₹250</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     APPETIZERS
+================================================== -->
+
+<section class="food-category" id="appetizers">
+
+    <h2>🍞 Appetizers</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/garlicbread.jpeg" alt="Garlic Bread">
+            <div class="menu-details"><h3>Garlic Bread</h3></div>
+            <strong>₹185</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/hummuscrostini.jpeg" alt="Hummus Crostini">
+            <div class="menu-details"><h3>Hummus Crostini</h3></div>
+            <strong>₹195</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/tomatobruschetta.jpeg" alt="Tomato Bruschetta">
+            <div class="menu-details"><h3>Tomato Bruschetta</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/mushroombruschetta.jpeg" alt="Mushroom Bruschetta">
+            <div class="menu-details"><h3>Mushroom Bruschetta</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/biancaneve.jpeg" alt="Biancaneve">
+            <div class="menu-details"><h3>Biancaneve</h3></div>
+            <strong>₹180</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     PIZZA
+================================================== -->
+
+<section class="food-category" id="pizza">
+
+    <h2>🍕 Pizza</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/margherita.jpeg" alt="Margherita">
+            <div class="menu-details"><h3>Margherita</h3></div>
+            <strong>₹490</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/alleverdure.jpeg" alt="Alle Verdure">
+            <div class="menu-details"><h3>Alle Verdure</h3></div>
+            <strong>₹475</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/heavensgarden.jpeg" alt="Heavens Garden">
+            <div class="menu-details"><h3>Heavens Garden</h3></div>
+            <strong>₹515</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/quattroformaggi.jpeg" alt="Quattro Formaggi">
+            <div class="menu-details"><h3>Quattro Formaggi</h3></div>
+            <strong>₹625</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     EGGS & BREAKFAST
+================================================== -->
+
+<section class="food-category" id="eggs">
+
+    <h2>🍳 Eggs & Breakfast</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/boiledegg.jpeg" alt="Boiled Egg">
+            <div class="menu-details"><h3>Boiled Egg</h3></div>
+            <strong>₹40</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/sunnysid up.jpeg" alt="Sunny Side Up">
+            <div class="menu-details"><h3>Sunny Side Up</h3></div>
+            <strong>₹110</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/plainomlette.jpeg" alt="Plain Omelette">
+            <div class="menu-details"><h3>Plain Omelette</h3></div>
+            <strong>₹110</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/omelettewithcheese.jpeg" alt="Omelette with Cheese">
+            <div class="menu-details"><h3>Omelette with Cheese</h3></div>
+            <strong>₹155</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/scrambledeggs.jpeg" alt="Scrambled Eggs">
+            <div class="menu-details"><h3>Scrambled Eggs</h3></div>
+            <strong>₹155</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/masalaomelette.jpeg" alt="Masala Omelette">
+            <div class="menu-details"><h3>Masala Omelette</h3></div>
+            <strong>₹155</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     DESSERTS
+================================================== -->
+
+<section class="food-category" id="desserts">
+
+    <h2>🍰 Desserts</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/carrotcakes.jpeg" alt="Carrot Cake">
+            <div class="menu-details"><h3>Carrot Cake</h3></div>
+            <strong>₹136</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/lemonyogurtcake.jpeg" alt="Lemon Yogurt Cake">
+            <div class="menu-details"><h3>Lemon Yogurt Cake</h3></div>
+            <strong>₹116</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/veganbananacake.jpeg" alt="Vegan Banana Cake">
+            <div class="menu-details"><h3>Vegan Banana Cake</h3></div>
+            <strong>₹116</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/tiramisu.jpeg" alt="Tiramisu">
+            <div class="menu-details"><h3>Tiramisu</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/opera.jpeg" alt="Opera">
+            <div class="menu-details"><h3>Opera</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/berrycheesecake.jpeg" alt="Berry Cheesecake">
+            <div class="menu-details"><h3>Berry Cheesecake</h3></div>
+            <strong>₹200</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/almondberryta.jpeg" alt="Almond Berry Tart">
+            <div class="menu-details"><h3>Almond Berry Tart</h3></div>
+            <strong>₹189</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/chocolate tart.jpeg" alt="Chocolate Tart">
+            <div class="menu-details"><h3>Chocolate Tart</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/chocolate eclair.jpeg" alt="Chocolate Éclair">
+            <div class="menu-details"><h3>Chocolate Éclair</h3></div>
+            <strong>₹210</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/vanillaberrychoux.jpeg" alt="Vanilla Berry Choux">
+            <div class="menu-details"><h3>Vanilla Berry Choux</h3></div>
+            <strong>₹200</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     GELATO & SORBET
+================================================== -->
+
+<section class="food-category" id="gelato">
+
+    <h2>🍨 Gelato & Sorbet</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/strawberry sorbet.jpeg" alt="Strawberry Sorbet">
+            <div class="menu-details"><h3>Strawberry Sorbet</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/gingerbreadcookie.jpeg" alt="Gingerbread Cookie">
+            <div class="menu-details"><h3>Gingerbread Cookie</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/classicvanila.jpeg" alt="Classic Vanilla">
+            <div class="menu-details"><h3>Classic Vanilla</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/tropical.jpeg" alt="Tropical">
+            <div class="menu-details"><h3>Tropical</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/vanillachocochip.jpeg" alt="Vanilla Choco Chip">
+            <div class="menu-details"><h3>Vanilla Choco Chip</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/pinacolada.jpeg" alt="Pinacolada">
+            <div class="menu-details"><h3>Pinacolada</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/mysore iltercoffee.jpeg" alt="Mysore Filter Coffee">
+            <div class="menu-details"><h3>Mysore Filter Coffee</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/chilliguava.jpeg" alt="Chilli Guava">
+            <div class="menu-details"><h3>Chilli Guava</h3></div>
+            <strong>₹125</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     COOKIES
+================================================== -->
+
+<section class="food-category" id="cookies">
+
+    <h2>🍪 Cookies</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <img src="imagesforblog/classicbiscotti.jpeg" alt="Classic Biscotti">
+            <div class="menu-details"><h3>Classic Biscotti</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+        <div class="menu-item">
+            <img src="imagesforblog/chocolatechipcookie.jpeg" alt="Chocolate Chip Cookie">
+            <div class="menu-details"><h3>Chocolate Chip Cookie</h3></div>
+            <strong>₹126</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <img src="imagesforblog/logo.jpeg" alt="The Old House Logo">
+
+    <h3>The Old House</h3>
+
+    <p>Where nature meets the warmth of home.</p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="oldhouse.html">The Oldhouse</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="reviews.html">Reviews</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 The Old House Café
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function showCategory(categoryName, clickedButton) {
+
+    // Get all menu categories
+    const categories = document.querySelectorAll(".food-category");
+
+    // Hide every category
+    categories.forEach(function(category) {
+        category.classList.remove("active-category");
+        category.style.display = "none";
+    });
+
+    // Find the category clicked
+    const selected = document.getElementById(categoryName);
+
+    // Show only that category
+    if (selected) {
+        selected.classList.add("active-category");
+        selected.style.display = "block";
+    }
+
+    // Remove active from every button
+    const buttons = document.querySelectorAll(".category");
+
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+
+    // Highlight clicked button
+    clickedButton.classList.add("active");
+
+    // Scroll to menu section
+    selected.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+</script>
+
+</body>
+</html>

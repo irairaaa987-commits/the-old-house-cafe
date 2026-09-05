@@ -1,0 +1,612 @@
+/* ==================================================
+   GALLERY PAGE
+   THE OLD HOUSE CAFÉ
+================================================== */
+
+
+/* ================= BASIC ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f0e7;
+    color: #29382c;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.gallery-navbar {
+    width: 100%;
+    min-height: 82px;
+    padding: 12px 6%;
+
+    background: #26382c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 100;
+}
+
+.gallery-logo img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    display: block;
+}
+
+.gallery-navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.gallery-navbar nav a {
+    color: #f7f2e8;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 8px 3px;
+
+    transition: color 0.3s ease;
+}
+
+.gallery-navbar nav a:hover {
+    color: #d6b87a;
+}
+
+.gallery-navbar nav a.active {
+    color: #d6b87a;
+
+    border-bottom: 2px solid #d6b87a;
+}
+
+
+/* ================= HERO ================= */
+
+.gallery-hero {
+    min-height: 520px;
+
+    background-image:
+        linear-gradient(
+            rgba(25, 39, 29, 0.45),
+            rgba(25, 39, 29, 0.60)
+        ),
+        url("../imagesforblog/ambience.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 70px 8%;
+}
+
+.gallery-hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.gallery-hero-content p {
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+.gallery-hero-content h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 0.85;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.gallery-hero-content span {
+    font-size: 17px;
+}
+
+
+/* ================= INTRO ================= */
+
+.gallery-intro {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 100px 25px 80px;
+}
+
+.gallery-label {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+    color: #78856e;
+}
+
+.gallery-intro h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 0.95;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.gallery-description {
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    color: #697166;
+
+    font-size: 16px;
+}
+
+
+/* ================= PHOTO GALLERY ================= */
+
+.photo-gallery {
+    width: 88%;
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+    padding-bottom: 110px;
+}
+
+.gallery-item {
+    position: relative;
+
+    min-height: 390px;
+
+    overflow: hidden;
+
+    background: #d8d1c2;
+}
+
+.gallery-item.large {
+    min-height: 520px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    min-height: inherit;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* ================= PHOTO CAPTION ================= */
+
+.gallery-caption {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 55px 30px 28px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.75)
+        );
+}
+
+.gallery-caption span {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.gallery-caption h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    margin: 5px 0;
+}
+
+.gallery-caption p {
+    font-size: 13px;
+
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   VIDEOS
+================================================== */
+
+.gallery-videos {
+    position: relative;
+
+    background: #26382c;
+
+    color: white;
+
+    padding: 100px 6%;
+
+    z-index: 1;
+}
+
+.video-heading {
+    max-width: 1200px;
+
+    margin: 0 auto 55px;
+}
+
+.gallery-videos .gallery-label {
+    color: #d6b87a;
+}
+
+.video-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 0.95;
+}
+
+
+/* ================= VIDEO GRID ================= */
+
+.video-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ================= VIDEO CARD ================= */
+
+.video-card {
+    background: #1d2c23;
+
+    position: relative;
+
+    overflow: hidden;
+
+    z-index: 3;
+
+    padding-bottom: 25px;
+}
+
+
+/* VIDEO BOX */
+
+.video-box {
+    width: 100%;
+
+    position: relative;
+
+    z-index: 5;
+
+    background: #111;
+
+    overflow: hidden;
+}
+
+
+/* VIDEO ITSELF */
+
+.video-card video {
+    width: 100%;
+    height: 360px;
+
+    display: block;
+
+    object-fit: cover;
+
+    position: relative;
+
+    z-index: 10;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+}
+
+
+/* IMPORTANT:
+   Nothing is allowed to cover the video controls.
+*/
+
+.video-card::before,
+.video-card::after,
+.video-box::before,
+.video-box::after {
+    content: none !important;
+
+    display: none !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ================= VIDEO INFORMATION ================= */
+
+.video-info {
+    position: relative;
+
+    z-index: 20;
+
+    padding-top: 1px;
+}
+
+.video-info h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    margin: 24px 25px 8px;
+}
+
+.video-info p {
+    margin: 0 25px;
+
+    color: #d0d5cb;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ================= QUOTE ================= */
+
+.gallery-quote {
+    text-align: center;
+
+    padding: 120px 25px;
+
+    background: #eee8db;
+}
+
+.gallery-quote p {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.1;
+}
+
+.gallery-quote span {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #7c8478;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.gallery-footer {
+    text-align: center;
+
+    background: #1d2c23;
+
+    color: white;
+
+    padding: 60px 20px 30px;
+}
+
+.gallery-footer img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+}
+
+.gallery-footer h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.gallery-footer > p {
+    color: #cbd0c8;
+
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 30px auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #eee8db;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d6b87a;
+}
+
+.copyright {
+    margin-top: 30px;
+
+    font-size: 12px !important;
+
+    opacity: 0.7;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 850px) {
+
+    .gallery-navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .gallery-navbar nav {
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+    }
+
+    .gallery-navbar nav a {
+        font-size: 13px;
+    }
+
+
+    .gallery-hero {
+        min-height: 450px;
+
+        padding: 50px 7%;
+    }
+
+
+    .photo-gallery {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .gallery-item,
+    .gallery-item.large {
+        min-height: 400px;
+    }
+
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .video-card video {
+        height: 300px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .gallery-hero-content h1 {
+        font-size: 58px;
+    }
+
+    .gallery-intro {
+        padding-top: 70px;
+    }
+
+    .gallery-item,
+    .gallery-item.large {
+        min-height: 330px;
+    }
+
+    .gallery-caption h3 {
+        font-size: 26px;
+    }
+
+    .video-card video {
+        height: 240px;
+    }
+
+    .gallery-videos {
+        padding: 75px 5%;
+    }
+
+}
